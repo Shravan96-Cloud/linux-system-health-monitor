@@ -14,6 +14,18 @@ This script combines core Linux administration commands to provide a quick, read
 
 ---
 
+## 📸 Project Demonstration
+
+Here is the script running under normal conditions. The disk usage threshold is set to 80%. Since current usage is low, no warning is triggered:
+
+![Normal Health Report](images/threshold80.png)
+
+To prove the conditional warning logic works, I intentionally lowered the threshold in the script to `0%`. As expected, the script correctly evaluated the logic and threw the custom red warning:
+
+![Alert Logic Test](images/threshold0.png)
+
+---
+
 ## 🚀 Setup & Execution
 
 ### Prerequisites
